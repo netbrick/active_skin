@@ -240,7 +240,8 @@ table.index_table
 
 
 form input[type=submit],
-a.button, 
+a.button,
+a.add_fields,
 a:link.button, 
 a:visited.button
   @include no-shadow()
@@ -253,7 +254,8 @@ a:visited.button
   &:hover
     background: lighten( $skinActiveColor, 10% ) !important
 form fieldset.buttons li.cancel a, 
-form fieldset.actions li.cancel a, 
+form fieldset.actions li.cancel a,
+form fieldset.inputs  li.remove_fields a,
 form.filter_form a.clear_filters_btn
   background: #ecf0f1
   @include no-shadow()
